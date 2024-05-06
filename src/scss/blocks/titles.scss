@@ -1,27 +1,34 @@
-.title{
-    width: 278px;
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    color: white;
-    margin: 24px 24px 12px 24px;
+@use '../mixins/hover.scss' as *;
+.title {
+  width: 278px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  margin: 24px 24px 12px 24px;
+  @include hover {
+    color: var(--cyan);
+  }
 }
-.data-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.data-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: -18px;
 }
-.data-container-text{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    color: var(--cyan);   
+.data-container-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  color: var(--cyan);
+  gap: 12px;
 }
-.day-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    color: var(--soft-blue); 
+.day-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  color: var(--soft-blue);
+  gap: 12px;
 }

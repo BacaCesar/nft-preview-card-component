@@ -1,9 +1,26 @@
-.text{
-    font-family: "Outfit", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 26px;
-    color: var(--soft-blue);
-    width: 278px;
-    margin: 12px 24px 16px 24px;
+@use '../mixins/hover.scss' as *;
+.text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: var(--soft-blue);
+  width: 278px;
+  margin: 12px 24px 16px 24px;
+}
+.text-profile-1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  line-height: 1px;
+  color: var(--soft-blue);
+}
+.text-profile-2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  line-height: 1px;
+  color: white;
+  font-weight: 400;
+  @include hover {
+    color: var(--cyan);
+  }
 }

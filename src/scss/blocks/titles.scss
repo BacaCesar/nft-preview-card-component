@@ -1,1 +1,27 @@
-
+.title{
+    width: 278px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+    margin: 24px 24px 12px 24px;
+}
+.data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.data-container-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: var(--cyan);   
+}
+.day-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: var(--soft-blue); 
+}
